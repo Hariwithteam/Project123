@@ -49,6 +49,16 @@ main {
     padding: 20px;
 }
 
+.cartLink{
+    text-decoration: none ;
+    color:black;
+}
+
+.header{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
 #banner {
     background-color: #C8D5B9;
     padding: 40px;
@@ -205,8 +215,14 @@ footer {
     margin: 5px 0;
     font-size: 14px;
 }
-/* Style for image_size */
-.image_size is {
+
+.header{
+    display:flex;
+    flex-direction: column;
+    
+    text-align: center;
+}
+
 
 
 /* Style for product price */
@@ -241,7 +257,7 @@ footer {
 </style>
 
 <body>
-    <header>
+    <header class="header">
         <h1>FARMGROW</h1>
         <nav>
             <ul>
@@ -289,7 +305,7 @@ footer {
             <h3>Carrot</h3>
             <p>Description: Fresh orange carrots</p>
             <p>Price: ₹25/lb</p>
-            <button class="buy-btn">Buy Now</button>
+            <button class="buy-btn"><a class='cartLink' href="/cart.html">Buy now</a></button>
             <button class="add-to-cart-btn">Add to Cart</button>
         </div>
     </li>
@@ -300,7 +316,7 @@ footer {
             <h3>Tomato</h3>
             <p>Description: Fresh Reddy Tomatoes</p>
             <p>Price: ₹30/lb</p>
-            <button class="buy-btn">Buy Now</button>
+            <button class="buy-btn"><a class='cartLink' href="/cart.html">Buy now</a></button>
             <button class="add-to-cart-btn">Add to Cart</button>
         </div>
     </li>
@@ -311,7 +327,7 @@ footer {
             <h3>Potato</h3>
             <p>Description: Organic Potatoes</p>
             <p>Price: ₹40/lb</p>
-            <button class="buy-btn">Buy Now</button>
+            <button class="buy-btn"><a class='cartLink' href="/cart.html">Buy now</a></button>
             <button class="add-to-cart-btn">Add to Cart</button>
         </div>
     </li>
@@ -322,7 +338,7 @@ footer {
             <h3>Onion</h3>
             <p>Description: Fresh Spicy Onions</p>
             <p>Price: ₹30/lb</p>
-            <button class="buy-btn">Buy Now</button>
+            <button class="buy-btn"><a class='cartLink' href="/cart.html">Buy now</a></button>
             <button class="add-to-cart-btn">Add to Cart</button>
         </div>
     </li>
@@ -333,7 +349,7 @@ footer {
             <h3>Lady'sfinger</h3>
             <p>Description: Fresh Green Lady's finger</p>
             <p>Price: ₹30/lb</p>
-            <button class="buy-btn">Buy Now</button>
+            <button class="buy-btn"><a class='cartLink' href="/cart.html">Buy now</a></button>
             <button class="add-to-cart-btn">Add to Cart</button>
         </div>
     </li>
@@ -344,7 +360,7 @@ footer {
             <h3>Beans</h3>
             <p>Description: Fresh green Beans</p>
             <p>Price: ₹20/lb</p>
-            <button class="buy-btn">Buy Now</button>
+            <button class="buy-btn"><a class='cartLink' href="/cart.html">Buy now</a></button>
             <button class="add-to-cart-btn">Add to Cart</button>
         </div>
     </li>
@@ -355,7 +371,7 @@ footer {
             <h3>Cucumber</h3>
             <p>Description:1kg of Fresh Cucumbers</p>
             <p>Price: ₹45/lb</p>
-            <button class="buy-btn">Buy Now</button>
+            <button class="buy-btn"><a class='cartLink' href="/cart.html">Buy now</a></button>
             <button class="add-to-cart-btn">Add to Cart</button>
         </div>
     </li>
@@ -366,7 +382,7 @@ footer {
             <h3>Cabbage</h3>
             <p>Description:1kg of clean & Fresh Cabbage</p>
             <p>Price: ₹30 /lb</p>
-            <button class="buy-btn">Buy Now</button>
+            <button class="buy-btn"><a class='cartLink' href="/cart.html">Buy now</a></button>
             <button class="add-to-cart-btn">Add to Cart</button>
         </div>
     </li>
@@ -377,7 +393,7 @@ footer {
             <h3>Raddish</h3>
             <p>Description: 1 kg of clean & Fresh reddish Raddish</p>
             <p>Price: ₹40/lb</p>
-            <button class="buy-btn">Buy Now</button>
+            <button class="buy-btn"><a class='cartLink' href="/cart.html">Buy now</a></button>
             <button class="add-to-cart-btn">Add to Cart</button>
         </div>
     </li>
@@ -388,7 +404,7 @@ footer {
             <h3>Lemons</h3>
             <p>Description: 1kg of Fresh & Refreshy Lemons</p>
             <p>Price: ₹100/lb</p>
-            <button class="buy-btn">Buy Now</button>
+            <button class="buy-btn"><a class='cartLink' href="/cart.html">Buy now</a></button>
             <button class="add-to-cart-btn">Add to Cart</button>
         </div>
     </li>
@@ -399,7 +415,7 @@ footer {
             <h3>Mango</h3>
             <p>Description:1kg of Fresh & Sweety Mangoes</p>
             <p>Price: ₹40/lb</p>
-            <button class="buy-btn">Buy Now</button>
+            <button class="buy-btn"><a class='cartLink' href="/cart.html">Buy now</a></button>
             <button class="add-to-cart-btn">Add to Cart</button>
         </div>
     </li>
@@ -410,7 +426,7 @@ footer {
             <h3>banana</h3>
             <p>Description: one dozen fresh bananas</p>
             <p>Price: ₹45/lb</p>
-            <button class="buy-btn">Buy Now</button>
+            <button class="buy-btn"><a class='cartLink' href="/cart.html">Buy now</a></button>
             <button class="add-to-cart-btn">Add to Cart</button>
         </div>
     </li>
@@ -421,7 +437,7 @@ footer {
             <h3>Cauliflower</h3>
             <p>Description:1 quantity of Fresh & Organic cauliflower</p>
             <p>Price: ₹30/lb</p>
-            <button class="buy-btn">Buy Now</button>
+            <button class="buy-btn"><a class='cartLink' href="/cart.html">Buy now</a></button>
             <button class="add-to-cart-btn">Add to Cart</button>
         </div>
     </li>
@@ -432,7 +448,7 @@ footer {
             <h3>Red chillies</h3>
             <p>Description: 1kg of Fresh Organic red chillies</p>
             <p>Price: ₹40/lb</p>
-            <button class="buy-btn">Buy Now</button>
+            <button class="buy-btn"><a class='cartLink' href="/cart.html">Buy now</a></button>
             <button class="add-to-cart-btn">Add to Cart</button>
         </div>
     </li>
@@ -443,7 +459,7 @@ footer {
             <h3>Rice</h3>
             <p>Description:1kg of stones removed and clean white Rice</p>
             <p>Price: ₹40/lb</p>
-            <button class="buy-btn">Buy Now</button>
+            <button class="buy-btn"><a class='cartLink' href="/cart.html">Buy now</a></button>
             <button class="add-to-cart-btn">Add to Cart</button>
         </div>
     </li>
@@ -454,7 +470,7 @@ footer {
             <h3>Green peas</h3>
             <p>Description:1kg of Fresh Greeny Peas</p>
             <p>Price: ₹50/lb</p>
-            <button class="buy-btn">Buy Now</button>
+            <button class="buy-btn"><a class='cartLink' href="/cart.html">Buy now</a></button>
             <button class="add-to-cart-btn">Add to Cart</button>
         </div>
     </li>
