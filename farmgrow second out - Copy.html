@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Farmgrow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+/* Reset default styles for some elements */
+body, figure, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set body font styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Set header styles */
+header {
+    background-color: #4A7C59;
+    color: #fff;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Set main content styles */
+main {
+    padding: 20px;
+}
+
+#banner {
+    background-color: #C8D5B9;
+    padding: 40px;
+    text-align: center;
+}
+
+#banner h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#banner p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#banner a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4A7C59;
+    color: #fff;
+    text-decoration: none;
+}
+
+#products h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#product-list {
+    list-style-type: none;
+}
+
+#product-list li {
+    margin-bottom: 10px;
+}
+
+#cart {
+    margin-top: 40px;
+}
+
+#cart h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#cart-list {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+#cart-list li {
+    margin-bottom: 10px;
+}
+
+#cart-total {
+    font-weight: bold;
+}
+
+#checkout-btn {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #FAF3DD;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Set about and contact section styles */
+section {
+    padding: 20px;
+}
+
+#about h2,
+#contact h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#about p,
+#contact p {
+    margin-bottom: 20px;
+}
+
+#contact-form label,
+#contact-form textarea,
+#contact-form input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contact-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+#contact-form button[type="submit"] {
+    display: block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Set footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+</style>
+<style>
+/* Style for product list */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style for each product item */
+.product-item {
+    flex-basis: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Style for product image */
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style for product details */
+.product-details {
+    margin-top: 10px;
+}
+
+/* Style for product title */
+.product-details h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Style for product description */
+.product-details p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+/* Style for image_size */
+.image_size is {
+
+
+/* Style for product price */
+.product-details p:last-child {
+    margin-bottom: 10px;
+}
+
+/* Style for Buy Now and Add to Cart buttons */
+.Buy-Now-btn,
+.Add-to-Cart-btn {
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 5px;
+    background-color: #4A7C59;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style for Add to Cart button */
+.add-to-cart-btn {
+    background-color: #4A7C59;
+}
+
+</style>
+<style>
+
+</style>
+
+<body>
+    <header>
+        <h1>FARMGROW</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="home">
+        <section id="banner">
+            <h2>Welcome to Our Store!</h2>
+            <p>Buy directly from the farmers</p>
+            <a href="#products">Shop Now</a>
+<!DOCTYPE html>
+        </section>
+<html>
+<head>
+    <title>Search Option Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search...">
+        <button id="search-button">Search</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+        <section id="products">
+            <h2>Products</h2>
+            <ul id="product-list">
+            <section id="products">
+    <h2>Vegetable Products</h2>
+    <ul id="product-list">
+        <ul class="product-list">
+    <li class="product-items">
+	<div class="image_size">
+        <img src="C:\Users\LENOVO\Downloads\pexels-mali-maeder-143133.jpg" alt="Vegetable 1" width="200" 
+     height="200">
+
+        <div class="product-details">
+            <h3>Carrot</h3>
+            <p>Description: Fresh orange carrots</p>
+            <p>Price: ₹25/lb</p>
+            <button class="buy-btn">Buy Now</button>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </li>
+    <li class="product-item">
+        <img src="C:\Users\LENOVO\Downloads\pexels-pixabay-533280.jpg" alt="Vegetable 2" width="100"
+     height="100">
+        <div class="product-details">
+            <h3>Tomato</h3>
+            <p>Description: Fresh Reddy Tomatoes</p>
+            <p>Price: ₹30/lb</p>
+            <button class="buy-btn">Buy Now</button>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </li>
+    <li class="product-item">
+        <img src="C:\Users\LENOVO\Downloads\pexels-marco-antonio-victorino-2286776.jpg" alt="Vegetable 3" width="90"
+     height="20">
+        <div class="product-details">
+            <h3>Potato</h3>
+            <p>Description: Organic Potatoes</p>
+            <p>Price: ₹40/lb</p>
+            <button class="buy-btn">Buy Now</button>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </li>
+    <li class="product-item">
+        <img src="C:\Users\LENOVO\Downloads\pexels-arina-krasnikova-6316528.jpg" alt="Vegetable 4" width="100"
+     height="100">
+        <div class="product-details">
+            <h3>Onion</h3>
+            <p>Description: Fresh Spicy Onions</p>
+            <p>Price: ₹30/lb</p>
+            <button class="buy-btn">Buy Now</button>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </li>
+    <li class="product-item">
+        <img src="C:\Users\LENOVO\Downloads\5.ladysfinger.jpg" alt="Vegetable 5" width="100"
+     height="100">
+        <div class="product-details">
+            <h3>Lady'sfinger</h3>
+            <p>Description: Fresh Green Lady's finger</p>
+            <p>Price: ₹30/lb</p>
+            <button class="buy-btn">Buy Now</button>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </li>
+    <li class="product-item">
+        <img src="C:\Users\LENOVO\Downloads\pexels-yulia-rozanova-3004798.jpg" alt="Vegetable 6" width="100"
+     height="100">
+        <div class="product-details">
+            <h3>Beans</h3>
+            <p>Description: Fresh green Beans</p>
+            <p>Price: ₹20/lb</p>
+            <button class="buy-btn">Buy Now</button>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </li>
+    <li class="product-item">
+        <img src="C:\Users\LENOVO\Downloads\pexels-matthias-zomer-3568039.jpg" alt="Vegetable 7" width="100"
+     height="100">
+        <div class="product-details">
+            <h3>Cucumber</h3>
+            <p>Description:1kg of Fresh Cucumbers</p>
+            <p>Price: ₹45/lb</p>
+            <button class="buy-btn">Buy Now</button>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </li>
+    <li class="product-item">
+        <img src="C:\Users\LENOVO\Downloads\8.cabbage.jpg" alt="Vegetable 8" width="100" 
+    height="100">
+        <div class="product-details">
+            <h3>Cabbage</h3>
+            <p>Description:1kg of clean & Fresh Cabbage</p>
+            <p>Price: ₹30 /lb</p>
+            <button class="buy-btn">Buy Now</button>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </li>
+    <li class="product-item">
+        <img src="C:\Users\LENOVO\Downloads\9.raddish.jpg" alt="Vegetable 9" width="100"
+     height="100">
+        <div class="product-details">
+            <h3>Raddish</h3>
+            <p>Description: 1 kg of clean & Fresh reddish Raddish</p>
+            <p>Price: ₹40/lb</p>
+            <button class="buy-btn">Buy Now</button>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </li>
+    <li class="product-item">
+        <img src="C:\Users\LENOVO\Downloads\10.lemons.jpg" alt="Vegetable 10" width="100" 
+     height="100">
+        <div class="product-details">
+            <h3>Lemons</h3>
+            <p>Description: 1kg of Fresh & Refreshy Lemons</p>
+            <p>Price: ₹100/lb</p>
+            <button class="buy-btn">Buy Now</button>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </li>
+    <li class="product-item">
+        <img src="C:\Users\LENOVO\Downloads\11.mangoes.jpg" alt="Vegetable 11" width="100"
+     height="100">
+        <div class="product-details">
+            <h3>Mango</h3>
+            <p>Description:1kg of Fresh & Sweety Mangoes</p>
+            <p>Price: ₹40/lb</p>
+            <button class="buy-btn">Buy Now</button>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </li>
+    <li class="product-item">
+         <img src="C:\Users\LENOVO\Downloads\12.bananas.jpg" alt="Vegetable 12" width="100"
+     height="100">
+        <div class="product-details">
+            <h3>banana</h3>
+            <p>Description: one dozen fresh bananas</p>
+            <p>Price: ₹45/lb</p>
+            <button class="buy-btn">Buy Now</button>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </li>
+    <li class="product-item">
+        <img src="C:\Users\LENOVO\Downloads\13.cauliflower.jpg" alt="Vegetable 13" width="100"
+     height="100">
+        <div class="product-details">
+            <h3>Cauliflower</h3>
+            <p>Description:1 quantity of Fresh & Organic cauliflower</p>
+            <p>Price: ₹30/lb</p>
+            <button class="buy-btn">Buy Now</button>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </li>
+    <li class="product-item">
+        <img src="C:\Users\LENOVO\Downloads\14.red chillies.jpg" alt="Vegetable 14" width="100"
+     height="100">
+        <div class="product-details">
+            <h3>Red chillies</h3>
+            <p>Description: 1kg of Fresh Organic red chillies</p>
+            <p>Price: ₹40/lb</p>
+            <button class="buy-btn">Buy Now</button>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </li>
+    <li class="product-item">
+        <img src="C:\Users\LENOVO\Downloads\15.rice.jpg" alt="Vegetable 15" width="100"
+     height="100">
+        <div class="product-details">
+            <h3>Rice</h3>
+            <p>Description:1kg of stones removed and clean white Rice</p>
+            <p>Price: ₹40/lb</p>
+            <button class="buy-btn">Buy Now</button>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </li>
+    <li class="product-item">
+        <img src="C:\Users\LENOVO\Downloads\16.grren peas.jpg" alt="Vegetable 16" width="100"
+     height="100">
+        <div class="product-details">
+            <h3>Green peas</h3>
+            <p>Description:1kg of Fresh Greeny Peas</p>
+            <p>Price: ₹50/lb</p>
+            <button class="buy-btn">Buy Now</button>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </li>
+ 
+
+    <!-- Add more vegetable product items as needed -->
+</ul>
+
+        <!-- Add more vegetable product items as needed -->
+    </ul>
+</section>
+
+                <!-- Products will be dynamically populated here -->
+            </ul>
+        </section>
+        <section id="cart">
+            <h2>Cart</h2>
+            <ul id="cart-list">
+                <!-- Items added to cart will be dynamically populated here -->
+            </ul>
+            <p>Total: ₹<span id="cart-total">0.00</span></p>
+            <button id="checkout-btn">Checkout</button>
+        </section>
+    </main>
+    <section id="contact">
+        <h2>User login/farmers login</h2>
+        <form id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email/phone">Email/Phone</label>
+            <input type="email/phone" id="email/phone" name="email/phone" required>
+            <label for="Password">Password</label>
+            <input type="Password" id="Password" name="Password" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Are you tired of wondering where your vegetables come from and how they are grown? Do you want to support local farmers and have access to farm-fresh produce at your fingertips? Look no further! Introducing Farmgrow, the revolutionary web application that connects farmers directly with consumers, bringing the farm to your doorstep.
+
+With Farmgrow, you can say goodbye to the middleman and enjoy the benefits of buying directly from local farmers. Our app provides a user-friendly platform that allows farmers to showcase their produce and sell it directly to consumers without any intermediaries. Here's what makes Farmgrow unique:
+
+
+Freshness Guaranteed: With Farmgrow, you can be confident that you are getting the freshest produce available. Our farmers harvest their crops at peak ripeness and deliver them straight to your doorstep, ensuring that you get the best quality produce for you and your family.
+
+
+Locally Sourced: We believe in supporting local farmers and promoting sustainable agriculture practices. Farmgrow connects you with farmers in your community, helping you to contribute to the local economy and reduce your carbon footprint by minimizing transportation.
+
+
+Transparency: Farmgrow promotes transparency in the food supply chain. You can learn about the farmers, their farming practices, and the story behind each product. Know exactly where your food comes from and how it's grown, giving you peace of mind about the quality and safety of the produce you consume.
+
+
+Convenience: Shopping with Farmgrow is easy and convenient. Simply browse through the app, place your order, and have your fresh produce delivered straight to your doorstep. No need to rush to the grocery store or worry about the freshness of your produce. Farmgrow brings the farm to you, saving you time and effort.
+
+
+Direct Connection: Farmgrow creates a direct connection between farmers and consumers, fostering a sense of community and mutual support. You can communicate with farmers, ask questions, and develop a relationship with the people who grow your food. Support local farmers and become a part of the farm-to-table movement with Farmgrow.
+
+
+Join us in revolutionizing the way you buy and consume produce. Say yes to fresh, locally sourced, and sustainably grown food with Farmgrow. Use our web app today and experience the joy of farm-to-table dining right in the comfort of your own home!</p>
+    </section>
+    <footer>
+        <p>&copy; 2023 Farmgrow. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
